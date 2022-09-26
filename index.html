@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="favicon" href="favicon.ico">
+    <title>Consult'Auto</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>
+                Bienvenue sur l'appli Web <br>
+                Consult'Auto <br>
+            </h1>
+            <div class="work-in-progress">
+                <img src="favicon-work.ico" alt="work-in-progress">
+                <p>
+                    Cette page est en cours de développement. <br>
+                    Merci de votre compréhension.
+                </p>
+                <img src="favicon-work.ico" alt="work-in-progress">
+            </div>
+
+            <div class="login-area">
+                <form action="verification.php" method="POST">
+                    <h1>Connexion</h1>
+                    
+                    <label><strong>Nom d'utilisateur</strong></label>
+                    <input type="text" placeholder="Entrer le nom d'utilisateur" name="mail" required>
+                    <br>
+                    <label><strong>Mot de passe</strong></label>
+                    <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+    
+                    <input type="submit" id='submit' value='Connexion' >
+                </form>
+                
+            </div>
+         </header>
+
+        <div class="container-onglets">
+            <div class="onglets active" data-anim="1"> Accueil</div>
+            <div class="onglets" data-anim="2"> Services</div>
+            <div class="onglets" data-anim="3"> Tarifs</div>
+            <div class="onglets" data-anim="4"> Contact</div>
+        </div>
+
+        <div class="content activeContent" data-anim="1">
+            <h2>étude de devis</h2>
+            <p>
+                Vous souhaitez vérifier le devis d'un réparateur, 
+                ou être accompagné lorsque vous lui emmenez votre 
+                véhicule ? <br>
+                Je vous apporte mon expertise et mes 
+                conseils pour l'entretien et la réparation de votre 
+                voiture, à distance ou en présentiel.
+            </p>
+            <hr>
+            <h2>accompagnement à l'achat</h2>
+            <p>
+                Vous souhaitez acquérir un véhicule neuf ou d'occasion ? <br>
+                L'achat d'une voiture est une étape importante et 
+                nécessite d'être bien informé. <br>
+                Je vous accompagne pour vous aider à trouver le bien 
+                qui correspondra à vos besoins.
+            </p>
+            <hr>
+            <h2>sessions d'accompagnement</h2>
+            <p>
+                Vous souhaitez en savoir plus sur votre véhicule, avoir 
+                des conseils personnalisés quant à son utilisation et 
+                son entretien ? <br> 
+                Mes sessions d'accompagnement sont faites pour vous ! <br>
+                Appelez vos amis, vos proches, qui souhaitent en profiter, 
+                et ensemble nous organiserons une session complètement 
+                personnalisée, puisque les conseils que je vous apporterai 
+                concerneront VOTRE voiture !
+            </p>
+            <hr>
+        </div>
+
+        <div class="content" data-anim="2">
+            <h2>étude de devis</h2>
+            <p>
+                L'étude de devis peut être réalisée à distance, en visio-conférence ou en votre présence au lieu de votre choix. <br>
+                Je peux donc vous accompagner chez votre réparateur pour vous rassurer quant à la nécessité d'une intervention ou non.<br>       
+                Elle permet de reconnaître quelles sont les prestations essentielles, de souligner celles qui sont recommandées mais non-essentielles, et mettre en évidence celles qui peuvent être considérées comme superflues. <br>
+                Vous pourrez choisir de définir votre demande en urgence, et je la réaliserai en priorité.
+                Quand j'étudierai le devis réalisé par votre réparateur, un code couleur sera appliqué en surlignant les lignes concernées, à savoir en vert sur les prestations essentielles, en jaune sur celles recommandées mais non essentielles, et en rose sur les prestations considérées superflues. <br>
+                Dans le cadre d'une étude à distance, pour chaque prestation surlignée en jaune ou en rose, je rédigerai un compte rendu le plus clair possible, pour une explication détaillée. En votre présence, ce compte-rendu vous sera expliqué oralement. <br>
+                Note importante : le réparateur ayant émis le devis original reste libre d'accepter ou de refuser de réaliser les prestations en dépit des conseils que je vous aurai apportés.
+            </p>
+            <hr>
+            <h2>accompagnement à l'achat</h2>
+            <p>
+                Cet accompagnement peut être réalisé à distance par le moyen de visio-conférences, ou en votre présence au lieu de votre choix. <br>
+                L'accompagnement à l'achat ( pour un véhicule neuf ou d'occasion ) est un service personnalisé prenant en compte vos attentes concernant le véhicule que vous souhaitez acquérir, et la délivrance de conseils pour que vous puissiez orienter votre décision avec un maximum d'éléments portés à votre connaissance ( liste non exhaustive : caractéristiques, utilisation... ). <br>
+                L'objectif de cette prestation est d'analyser votre besoin en terme de véhicule, de vous conseiller sur les spécificités des modèles que vous envisagez d'acquérir, afin que vous puissiez faire votre choix de manière éclairée. <br>
+                Je pourrai vous assister en étant à vos côtés lorsque vous irez visiter un véhicule, et vous aider à identifier les points positifs et négatifs afin de vous permettre de réaliser votre achat dans les meilleures conditions possibles. <br>
+            </p>
+            <hr>
+            <h2>sessions d'accompagnement</h2>
+            <p>
+                Les sessions d'accompagnement sont des réunions d'information en groupe de 5 à 6 personnes maximum, afin de vous délivrer des conseils personnalisés dans l'utilisation et l'entretien de votre propre véhicule. <br>
+                Elles sont catégorisées par thèmes, pour que les informations que je vous donnerai soient ciblées sur un point précis. <br>
+                En fonction de l'organisation et du temps imparti, il pourra être envisagé de regrouper plusieurs thèmes. <br>
+            </p>
+            <hr>
+            <h2>déplacements</h2>
+            <p>
+                En fonction de votre besoin, nous pourrons fixer un rendez-vous physique pour vous apporter mes services. <br>
+                Je me déplace dans un rayon de 70km, au lieu de votre choix, pour vous proposer la meilleure solution à votre demande. <br>
+            </p>
+            <hr>
+            <h2>visio-conférences</h2>
+            <p>
+                Mes prestations en visio-conférence sont un moyen d'échange à distance lorsque qu'un rendez-vous physique n'est pas possible. <br>
+                J'utilise le site www.whereby.com pour les réaliser, sur rendez-vous, via un lien que je vous communiquerai lorsque vous ferez appel à ce service. <br>
+            </p>
+            <hr>
+        </div>
+
+        <div class="content" data-anim="3">
+            <h2>étude de devis</h2>
+            <p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="tab-left">Devis conforme :</td>
+                            <td class="tab-right">10€</td>
+                        </tr>
+                        <tr>
+                            <td class="tab-left">Devis révisé :</td>
+                            <td class="tab-right">15€</td>
+                        </tr>
+                        <tr>
+                            <td class="tab-left">Devis Urgent conforme :</td>
+                            <td class="tab-right">20€</td>
+                        </tr>
+                        <tr>
+                            <td class="tab-left">Devis Urgent révisé :</td>
+                            <td class="tab-right">30€</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="tab-left">Supplément visio-conférence :</td>
+                            <td class="tab-right">5€</td>
+                        </tr>
+                        <tr>
+                            <td class="tab-left">Supplément Zone 1 :</td>
+                            <td class="tab-right">10€</td>
+                        </tr>
+                        <tr>
+                            <td class="tab-left">Supplément Zone 2 :</td>
+                            <td class="tab-right">20€</td>
+                        </tr>
+                        <tr>
+                            <td class="tab-left">Supplément Zone 3 :</td>
+                            <td class="tab-right">40€</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                Frais Autoroute : deux fois le tarif du trajet << aller >>
+            </p>
+            <hr>
+            <h2>accompagnement à l'achat</h2>
+            <p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="tab-left">Forfait visio-conférence :</td>
+                            <td class="tab-right">20€</td>
+                        </tr>
+                        <tr> <td> <br> </td> </tr>
+                        <tr>
+                            <td class="tab-left">Déplacement Zone 1</td>
+                            <td class="tab-right">30€</td>
+                        </tr>
+                        <tr>
+                            <td class="tab-left">Déplacement Zone 2</td>
+                            <td class="tab-right">70€</td>
+                        </tr>
+                        <tr>
+                            <td class="tab-left">Déplacement Zone 3</td>
+                            <td class="tab-right">100€</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                Frais Autoroute : deux fois le tarif du trajet << aller >>
+            </p>
+            <hr>
+            <h2>sessions d'accompagnement</h2>
+            <p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Session Pneumatiques</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tab-left">- Zone 1</td>
+                            <td class="tab-right">40€ / Personne</td>
+                        </tr>
+                        <tr>
+                            <td class="tab-left">- Zone 2</td>
+                            <td class="tab-right">55€ / Personne</td>
+                        </tr>
+                        <tr>
+                            <td class="tab-left">- Zone 3</td>
+                            <td class="tab-right">65€ / Personne</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Session Entretien courant</th>
+                        </tr>
+                    </thead> 
+                    <br>
+                    <tbody>
+                        <tr>
+                            <td class="tab-left">- Zone 1</td>
+                            <td class="tab-right">45€ / Personne</td>
+                        </tr>
+                        <tr>
+                            <td class="tab-left">- Zone 2</td>
+                            <td class="tab-right">55€ / Personne</td>
+                        </tr>
+                        <tr>
+                            <td class="tab-left">- Zone 3</td>
+                            <td class="tab-right">65€ / Personne</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </p>
+            <hr>
+            <h2>déplacements</h2>
+            <p>
+                La distance utilisée pour la zone concernée est celle 
+                fournie par Google Maps, depuis le siège de la société 
+                jusqu'au lieu de rendez-vous que vous proposerez. <br>
+                Les zones de déplacement sont au nombre de trois, et 
+                réparties selon les informations suivantes : <br>
+                - Zone 1 : de 0km à 20km <br>
+                - Zone 2 : de 20km à 40km <br>
+                - Zone 3 : de 40km à 70km <br>
+                Si un rendez-vous dépasse la distance de 70km, je pourrai 
+                vous proposer d'effectuer la prestation en Visio-conférence. 
+                Dans le cas contraire, je ne pourrai donner suite à votre 
+                demande pour le moment. <br>
+                Je m'engage, au possible, à limiter l'utilisation du
+                 réseau autoroutier lors des déplacements. <br>
+                 Cependant, si des contraintes horaires l'imposent, et 
+                 pour la bonne exécution d'une prestation, le tarif facturé 
+                 pour l'utilisation du réseau autoroutier sera égal à 
+                 deux fois le prix du trajet << aller >> . <br>
+                 Une copie électronique du reçu pourra vous être envoyée 
+                 par mail, sur votre demande. <br>
+            </p>
+            <hr>
+            <h2>conditions générales de vente</h2>
+            <p>
+                Le règlement des services par carte bancaire et par lien 
+                de paiement se fait par transaction sécurisée par 
+                chiffrement à l'aide de notre prestataire : <br>
+                <a href="https://www.zettle.com/fr" target="_blank">https://www.zettle.com/fr</a> <br> <br>
+                <a href="https://drive.google.com/file/d/1-JkhuVmEtsiIKgs7WlutXX4-0sqb0jQ0/view?usp=sharing" target="_blank">Retrouvez-ici les conditions générales de vente</a> <br> <br>
+
+            </p>
+            <hr>
+        </div>
+        <div class="content" data-anim="4">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfT5ujGqF7mt5UHDNGmlENfOKrXSgSZasuNJzME5WL1GNt7zg/viewform?embedded=true" 
+            width="100%" height="600px">Chargement…</iframe>
+        </div>
+    </div>
+
+    <script src="App.js"></script>
+</body>
+<footer>
+
+</footer>
+</html>
