@@ -483,7 +483,11 @@ td{
         padding: 5px;
     } 
 }
-
+.copyright{
+    align-items: center;
+    text-align: center;
+    height: 50px;
+}
 /* Anim */
 
 .active{
